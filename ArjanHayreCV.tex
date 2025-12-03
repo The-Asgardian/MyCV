@@ -1,0 +1,79 @@
+\documentclass[a4paper,4pt]{article}
+\usepackage[a4paper,margin=0.8in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\pagenumbering{gobble}
+
+% Spacing
+\setlength{\parskip}{0.2em}
+\setlength{\parindent}{2pt}
+\setlist[itemize]{topsep=0pt, itemsep=1pt, left=0pt}
+
+% Section style
+\titleformat{\section}{\Large\bfseries\color{black}}{}{0em}{}[\titlerule]
+
+\begin{document}
+
+% --- Header ---
+\begin{center}
+    {\Large \textbf{Arjan Singh Hayre}} \\
+    London, UK • \href{mailto:arjanh6@gmail.com}{arjanh6@gmail.com} • 07360 185965 \\
+    GitHub: \href{https://github.com/The-Asgardian}{The-Asgardian} • LinkedIn: \href{https://www.linkedin.com/in/arjan-hayre-aa406319b/}{arjan-hayre}
+\end{center}
+
+
+
+% --- Profile ---
+\section*{Profile}
+Full-stack and backend engineer with experience in distributed systems, microservices, and applied machine learning. Delivered production workflows, backend services, and real-time data tools across multiple internships. Strong grounding in C++ systems programming through academic projects involving concurrency, memory management, and low-level optimisation.
+
+
+% --- Education ---
+\section*{Education}
+\textbf{Imperial College London}, UK \\
+MEng/BEng Electronics and Information Engineering (Predicted Upper second class) \hfill 2022--2026 \\
+A-Levels: Mathematics (A*), Physics (A*), Further Mathematics (A)
+
+% --- Experience ---
+\section*{Experience}
+
+\textbf{Full-Stack Developer} — Summer Internship \hfill Jul 2024 -- Oct 2024 \\
+\emph{Xcceler8 Ltd (Client: WeBook), Remote}  
+\begin{itemize}
+    \item Built booking and reservation workflows using Camunda BPMN and Spring Boot microservices; supported a service handling on the order of \emph{hundreds of thousands of HTTP requests per day}, improving system reliability and cutting down manual corrections in production.  
+    \item Designed PostgreSQL schemas and introduced Redis caching for high-traffic endpoints, cutting median API response time from roughly 180\,ms to 95\,ms under peak load. 
+    \item Extended API gateway to enforce rate limiting and request validation, enabling the system to sustain bursts of concurrent requests with minimal failures.  
+    \item Collaborated with product, UX and QA teams to ship regular feature releases, helping shorten release cycles and maintain consistent throughput of new deployments.  
+\end{itemize}
+
+\textbf{Full-Stack Developer} — Summer Internship \hfill Jul 2023 -- Oct 2023 \\
+\emph{Xcceler8 Ltd, London}  
+\begin{itemize}
+    \item Integrated Firebase Authentication and Firestore with backend services, implementing OAuth2/JWT authentication flows — improved user login stability across thousands of daily users.  
+    \item Developed RBAC (role-based access control) and access-control modules across services, tightening security and reducing the incidence of permission-related errors.  
+    \item Built internal admin dashboard components using React and Material UI; enabled support teams to manage user accounts and data queries more efficiently, reducing support-render time per request.  
+\end{itemize}
+
+\textbf{Backend Developer} — Summer Internship \hfill Jul 2022 -- Oct 2022 \\
+\emph{Dorchester Homes, London}  
+\begin{itemize}
+    \item Built a property-valuation assistant using Python regression models on historical sales data.
+    \item Implemented a project-tracking and VAT automation dashboard used by operations staff weekly, streamlining internal reporting and eliminating multiple manual steps from monthly financial workflows.  
+    \item Optimised SQLite schema and queries — improved average report generation time from ~2.1 seconds down to ~0.7 seconds under typical load.  
+\end{itemize}
+
+
+
+% --- Skills ---
+\section*{Technical Skills}
+\textbf{Languages:} C++, Python, JavaScript/TypeScript, Go
+\textbf{Frameworks:} React, Node.js, Flask, Spring Boot \\
+\textbf{Systems:} Microservices, Kafka, Redis, Docker, REST 
+\textbf{Databases:} PostgreSQL, MongoDB, SQLite 
+\textbf{ML/AI:} PyTorch, TensorFlow, LLM tooling (RAG, LoRA, llama.cpp) 
+\textbf{Security:} OAuth2, JWT, RBAC, bcrypt, security headers, rate limiting 
+\textbf{Tools:} Wireshark, OWASP ZAP, nmap, Fail2ban
+
+\end{document}
